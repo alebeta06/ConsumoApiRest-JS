@@ -92,6 +92,10 @@ function movieDetailsPage() {
   categoriesPreviewSection.classList.add('inactive');
   genericSection.classList.add('inactive');
   movieDetailSection.classList.remove('inactive');
+
+  // ['#movie', '234567']
+  const [_, movieId] = location.hash.split('=');
+  getMovieById(movieId);
 }
   
 function searchPage() {
@@ -109,6 +113,10 @@ function searchPage() {
   categoriesPreviewSection.classList.add('inactive');
   genericSection.classList.remove('inactive');
   movieDetailSection.classList.add('inactive');
+
+  // ['#search', 'platzi']
+  const [_, query] = location.hash.split('=');
+  getMoviesBySearch(query);
 }
   
 function trendsPage() {
@@ -126,4 +134,8 @@ function trendsPage() {
   categoriesPreviewSection.classList.add('inactive');
   genericSection.classList.remove('inactive');
   movieDetailSection.classList.add('inactive');
+
+  headerCategoryTitle.innerHTML = 'Tendencias';
+
+  getTrendingMovies();
 }
