@@ -1,2 +1,2 @@
-# ConsumoApiRest-JS
-Practica de consumo de API REST de peliculas con JavaScript
+# Practica de consumo de API REST con JavaScript
+## Buscador de Peliculas
