@@ -68,7 +68,7 @@ async function getCategegoriesPreview() {
   const { data } = await api('genre/movie/list');
   const categories = data.genres;
 
-  createCategories(categories, categoriesPreviewList)  ;
+  createCategories(categories, categoriesPreviewList);
 }
 
 async function getMoviesByCategory(id) {
