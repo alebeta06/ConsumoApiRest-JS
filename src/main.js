@@ -36,6 +36,8 @@ function likeMovie(movie) {
   }
 
   localStorage.setItem('liked_movies', JSON.stringify(likedMovies));
+  getTrendingMoviesPreview()
+  getLikedMovies()
 }
 
 // Utils
